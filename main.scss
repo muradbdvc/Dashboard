@@ -1,0 +1,117 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+.navbar-brand{
+    padding: 12px 20px !important;
+}
+@media (min-width: 769px) {
+    .sidebar {
+      display: table-cell;
+      vertical-align: top;
+      width: 260px;
+    }
+}
+.user-icon{
+    img{
+        position: relative;
+    }
+}
+.img-crl{
+    width: 75px;
+    height: 75px;
+    display: block !important;
+    border: 1px solid gainsboro !important;
+    border-radius: 50% !important;
+    padding: 5px;
+}
+.media{
+    position: relative;
+    display: contents !important;
+    padding-top: 10px;
+}
+.media-body{
+    text-align: center;
+    display: grid;
+    margin: 15px;
+}
+
+/* ------------------------------------------------------------------------------
+*
+*  # Main content layout
+*
+*  Styles for main structure of content area
+*
+*  Version: 1.0
+*  Latest update: May 25, 2015
+*
+* ---------------------------------------------------------------------------- */
+.page-container {
+  position: relative;
+}
+@media (min-width: 769px) {
+  .page-container {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+}
+@-moz-document url-prefix() {
+  .page-container {
+    height: 1px;
+  }
+}
+@media (min-width: 769px) {
+  .page-content {
+    display: table-row;
+  }
+}
+.content-wrapper {
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .content-wrapper {
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+.content {
+  padding: 20px 20px;
+}
+.content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.page-header + .content {
+  padding-top: 0;
+}
+.card-body{
+    border-radius: 10px;
+    border: none !important;
+    background-color: rgb(224, 224, 224) !important;
+}
+.icon span{
+  border: gray 1px solid;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 44px;
+  align-items: center;
+  display: block;
+  max-width: 80px;
+}
+.right-sidebar{
+  background-color: rgb(236, 248, 248);
+}
+.user-deposit{
+  span{
+    display: block;
+  }
+  i{
+    float: left;
+    font-size: 40px;
+    overflow: hidden;
+  }
+}
